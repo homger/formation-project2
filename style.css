@@ -210,6 +210,7 @@ header  .fa-circle{
 /*========================= BANNER SLIDER =========================================*/
 #slider img{
 	display: table;
+	flex-shrink: 0;
 }
 #slider{
 	display: flex;
