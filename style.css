@@ -198,6 +198,7 @@ header  .fa-circle{
 #charge-level{
 	position: absolute;
 	left: 0;
+	bottom: 0;
 	height: 100%;
 	width: 30%;
 	background-color: #5CADD3;
@@ -222,15 +223,20 @@ header  .fa-circle{
 /*========================= BANNER ANIMATION =========================================*/
 @keyframes slider-swap{
 	0%{}
-	40%{transform: translateX(0%);}
+	41%{transform: translateX(0%);}
 	50%{transform: translateX(-100%);}
-	90%{transform: translateX(-100%);}
+	91%{transform: translateX(-100%);}
 	100%{transform: translateX(0%);}
 }
 @keyframes charging{
 	0%{ width: 0%;}
-	80%{ width: 100%;}
-	100%{ width: 100%;}
+	80%{ width: 100%; background-color: #5CADD3; height: 100%;}
+	81%{ background-color: white; height: 300%;}
+	86%{ background-color: #5CADD3;}
+	90%{ background-color: white;}
+	95%{ background-color: #5CADD3;}
+	99%{ height: 300%;}
+	100%{ width: 100%; background-color: #5CADD3; height: 100%;}
 }
 
 #left-arrow:hover, #right-arrow:hover{
