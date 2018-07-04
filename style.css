@@ -231,7 +231,7 @@ header  .fa-circle{
 @keyframes charging{
 	0%{ width: 0%;}
 	80%{ width: 100%; background-color: #5CADD3; height: 100%;}
-	81%{ background-color: white; height: 300%;}
+	81%{ background-color: white; height: 220%;}
 	86%{ background-color: #5CADD3;}
 	90%{ background-color: white;}
 	95%{ background-color: #5CADD3;}
