@@ -78,7 +78,7 @@ section > header{
 	font-size: 1.5rem;
 }
 section > header p{
-	margin-top: 30px;
+	margin-top: 5px;
 }
 header  .fa-circle{
 	position: relative;
@@ -118,26 +118,19 @@ header  .fa-circle{
 	box-shadow: 0 1px 5px black;
 	min-width: 300px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 #logo{
 	z-index: -1;
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 10%;
 	flex:1;
+	width: auto;
 }
 #logo img{
 	max-width: 100%;
 	height: auto;
 }
 #menu{
-	
 	display: flex;
 	justify-content: space-around;
-	width: 100%;
 	flex:10;
 }
 #menu a{
@@ -235,7 +228,7 @@ header  .fa-circle{
 #services-list li p{
 	font-size: 1.5rem;
 }
-#services-list h2, #services-list p{
+#services-list h3, #services-list p{
 	margin-top: 10px;
 }
 #services-list li{

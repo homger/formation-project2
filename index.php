@@ -42,7 +42,7 @@
 	</header>
 	<section id="services">
 		<header>
-			<h1>NOS SERVICES</h1>
+			<h2>NOS SERVICES</h2>
 			<div class="separator">
 				<i class="fas fa-circle"></i>
 				<hr class="c-bar"/>
@@ -55,21 +55,21 @@
 				<li>
 					<i class="fas fa-chart-line"><i class="fas fa-circle"></i></i>
 					<article>
-						<h2>UX design</h2>
+						<h3>UX design</h3>
 						<p>Nous accordons une importance toute particulière à l'expérience utilisateur.</p>
 					</article>
 				</li>
 				<li>
 					<i class="fas fa-cubes"><i class="fas fa-circle"></i></i>
 					<article>
-						<h2>UI design</h2>
+						<h3>UI design</h3>
 						<p>Nos experts designers mettent au point une interface utilisateur intuitive, idéale pour la vente de vos produits et une navigation sans discomfort.</p>
 					</article>
 				</li>
 				<li>
 					<i class="fas fa-chart-pie"><i class="fas fa-circle"></i></i>
 					<article>
-						<h2>SEO</h2>
+						<h3>SEO</h3>
 						<p>Après être passé par notre service de référencement web, votre site web sera détecté parfaitement par les moteurs de recherche pour une exposition optimale.</p>
 					</article>
 				</li>
@@ -79,7 +79,7 @@
 	</section>
 	<section id="portfolio">
 		<header>
-			<h1>NOS PROJETS</h1>
+			<h2>NOS PROJETS</h2>
 			<div class="separator">
 				<i class="fas fa-circle"></i>
 				<hr class="c-bar"/>
@@ -168,7 +168,7 @@
 		</div>
 		<form id="contact-form" action="#contact-form" method="POST">
 			<fieldset>
-				<h1>Contact Info</h1>
+				<h3>Contact Info</h3>
 				<h4>WebAgency SAS</h4>
 				<p>25 Rue d'Hauteville 75010 Paris <br>
 				   <span id="tel">Tel:</span> 01 02 03 04 05

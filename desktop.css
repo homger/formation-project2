@@ -9,34 +9,42 @@
 		section > header{
 			width: 50%;
 		}
+		header > h2{
+			font-size: 4rem;
+		}
 		.separator{
-			margin-top: 50px;
-			margin-bottom: 20px;
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 		/*====================== ACCEUIL ===================================*/
 		/*========================= NAV ======================================*/
 		#accueil nav{
 			box-shadow: none;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			
 		}
 		#logo{
-			width: 20%;
-			margin-top: 20px;
 			margin-left: 7.5rem;
+			flex: none;
+			
 		}
 		#menu{
-			float: right;
-			width: auto;
 			margin-right: 7.5rem;
+			flex: none;
+			align-self: flex-start;
+
 		}
 		#menu a{
 			padding: 0 2rem;
 			padding-top: 40px;
-			padding-bottom: 18px;
+			padding-bottom: 20px;
 			font-size: 1.5rem;
 		}
 		/*========================= BANNER =========================================*/
 		#banner{
-			margin-top: 100px;
+			margin-top: 60px;
 			text-shadow: none;
 		}
 		#left-arrow, #right-arrow{
@@ -96,7 +104,7 @@
 			top: calc(50% - 0.9rem);
 			right: -0.9rem;
 		}
-		#services-list h2, #services-list p{
+		#services-list h3, #services-list p{
 			margin-top: 10px;
 		}
 		#services-list li{
