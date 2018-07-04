@@ -161,6 +161,8 @@ header  .fa-circle{
 	padding: 1rem 0.5rem;
 	background-color: rgba(0,0,0,0.20);
 	color: white;
+	transition-property: background-color, color, box-shadow;
+	transition-duration: 0.4s;
 }
 #left-arrow{
 	left: -1.5rem;
@@ -188,7 +190,7 @@ header  .fa-circle{
 }
 #charge-bar{
 	position: absolute;
-	bottom: 3px;
+	bottom: 0;
 	height: 3px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.3);
@@ -199,6 +201,43 @@ header  .fa-circle{
 	height: 100%;
 	width: 30%;
 	background-color: #5CADD3;
+	animation-name: charging;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(1,1,1,1);
+}
+/*========================= BANNER SLIDER =========================================*/
+#slider img{
+	display: table;
+}
+#slider{
+	display: flex;
+	flex-wrap: none;
+	animation-name: slider-swap;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(1,1,1,1);
+	
+}
+/*========================= BANNER ANIMATION =========================================*/
+@keyframes slider-swap{
+	0%{}
+	40%{transform: translateX(0%);}
+	50%{transform: translateX(-100%);}
+	90%{transform: translateX(-100%);}
+	100%{transform: translateX(0%);}
+}
+@keyframes charging{
+	0%{ width: 0%;}
+	80%{ width: 100%;}
+	100%{ width: 100%;}
+}
+
+#left-arrow:hover, #right-arrow:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	box-shadow: 3px 2px 8px white, -3px -2px 8px white;
 }
 
 /*======================= SERVICES ===================================*/

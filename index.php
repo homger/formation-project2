@@ -17,15 +17,18 @@
 				<img src="images/logo.png" alt="WebAgency Logo"/>
 			</div>
 			<ul id="menu">
-				<li><a class="active" href="#menu">Accueil</a></li>
-				<li><a href="#menu">Services</a></li>
-				<li><a href="#menu">Portfolio</a></li>
-				<li><a href="#menu">Contact</a></li>
+				<li><a class="active" href="#banner">Accueil</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<div id="banner">
 			<div>
-				<img src="images/slider/bg1.jpg" alt="banner image"/>
+				<div id="slider">
+					<img src="images/slider/bg1.jpg" alt="banner image"/>
+					<img src="images/slider/bg2.jpg" alt="banner image"/>
+				</div>
 				<i id="left-arrow" class="fas fa-chevron-left"></i>
 				<i id="right-arrow" class="fas fa-chevron-right"></i>
 				<div id="txt">
@@ -49,7 +52,7 @@
 			</div>
 			<p>La Webagency offre des services web qui couvriront la totalité de vos besoins que ce soit au niveau de l'expérience utilisateur, de l'aspect visuel de votre site web ou encore du référencement auprès des moteurs de recherche.</p>
 		</header>
-		<section id="services-list">
+		<div id="services-list">
 			<aside><img src="images/main-feature.png" alt=""/></aside>
 			<ul>
 				<li>
@@ -74,7 +77,7 @@
 					</article>
 				</li>
 			</ul>
-		</section>
+		</div>
 
 	</section>
 	<section id="portfolio">
