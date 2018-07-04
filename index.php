@@ -28,6 +28,7 @@
 				<div id="slider">
 					<img src="images/slider/bg1.jpg" alt="banner image"/>
 					<img src="images/slider/bg2.jpg" alt="banner image"/>
+					<img src="images/slider/bg1.jpg" alt="banner image"/>
 				</div>
 				<i id="left-arrow" class="fas fa-chevron-left"></i>
 				<i id="right-arrow" class="fas fa-chevron-right"></i>
@@ -89,7 +90,7 @@
 			</div>
 			<p>La Webagency est une entreprise active et nous avons accompli de nombreux projets avec succès.</p>
 		</header>
-		<section>
+		<div>
 			<nav id="portfolio-menu">
 				<ul>
 					<li><a href="#portfolio">All Works</a></li><li><a href="#portfolio">Creative</a></li><li><a href="#portfolio">Corporate</a></li><li><a href="#portfolio">Portfolio</a></li>
@@ -161,8 +162,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
-
+		</div>
 	</section>
 	<section id="contact">
 		<div id="map">

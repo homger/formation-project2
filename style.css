@@ -213,7 +213,7 @@ header  .fa-circle{
 }
 #slider{
 	display: flex;
-	flex-wrap: none;
+	flex-wrap: nowrap;
 	animation-name: slider-swap;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
@@ -222,10 +222,11 @@ header  .fa-circle{
 }
 /*========================= BANNER ANIMATION =========================================*/
 @keyframes slider-swap{
-	0%{}
+	
 	41%{transform: translateX(0%);}
 	50%{transform: translateX(-100%);}
 	91%{transform: translateX(-100%);}
+	99.999%{transform: translateX(-200%);}
 	100%{transform: translateX(0%);}
 }
 @keyframes charging{
@@ -251,24 +252,31 @@ header  .fa-circle{
 #services{
 	text-align: center;
 }
+#services-list aside{
+	text-align: center;
+}
 #services-list img{
-	max-width: 100%;
+	max-width: 510px;
 	height: auto;
 }
 #services-list li > i {
 	position: relative;
 	font-size: 1.5rem;
 	padding: 1rem;
+	width: 3.7rem;
+	height: 3.7rem;
 	border: 1px solid rgba(0,0,0,0.2);
 	border-radius: 50%;
 }
 #services-list li > i i{
+	padding: 3px;
+	background-color: white;
 	position: absolute;
 	font-size: 1rem;
-	border: 3px solid white;
+	border: 0;
 	border-radius: 50%;
 	top: calc(50% - 0.8rem);
-	right: -0.8rem;
+	right: -0.9rem;
 }
 #services-list li p{
 	font-size: 1.5rem;
@@ -281,9 +289,6 @@ header  .fa-circle{
 }
 /*============================ PORTFOLIO ==================================*/
 /*=============================== NAV ========================================*/
-#portfolio{
-	
-}
 #portfolio nav{
 	margin: 50px auto;
 }
