@@ -1,0 +1,187 @@
+
+@media all and (min-device-width: 481px) and (min-device-height: 481px),
+ ( min-width: 801px ) and ( min-height: 801px ){
+ 	@media not all and (orientation: portrait){
+
+		body{
+			font-size: 1.5rem;
+		}
+		section > header{
+			width: 50%;
+		}
+		.separator{
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		/*====================== ACCEUIL ===================================*/
+		/*========================= NAV ======================================*/
+		#accueil nav{
+			box-shadow: none;
+		}
+		#logo{
+			width: 20%;
+			margin-top: 20px;
+			margin-left: 7.5rem;
+		}
+		#menu{
+			float: right;
+			width: auto;
+			margin-right: 7.5rem;
+		}
+		#menu a{
+			padding: 0 2rem;
+			padding-top: 40px;
+			padding-bottom: 18px;
+			font-size: 1.5rem;
+		}
+		/*========================= BANNER =========================================*/
+		#banner{
+			margin-top: 100px;
+			text-shadow: none;
+		}
+		#left-arrow, #right-arrow{
+			font-size: 1.5rem;
+			border-radius: 50%;
+			top: calc( 50% - 2.75rem);
+			padding: 2rem 1rem;
+		}
+		#left-arrow{
+			left: -3rem;
+			padding-left: 4rem;
+		}
+		#right-arrow{
+			right: -3rem;
+			padding-right: 4rem;
+		}
+		#txt{
+			font-size: 1em;
+			top: 20%;
+			left: 10%;
+			width: 50%;
+		}
+		#txt .blue{
+			color: #5CADD3;
+		}
+		#txt p{
+			margin-top: 30px;
+		}
+		#info{
+			margin-top: 20px;
+			padding: 1rem;
+			background-color: #5CADD3;
+			box-shadow: 0 -3px 0 rgba(0,0,0,0.3) inset;
+			border-radius: 5px;
+			color: white;
+		}
+
+		/*======================= SERVICES ===================================*/
+		#services{
+			margin-top: 100px;
+		}
+		#services-list{
+			margin-top: 50px;
+			display: grid;
+			grid-template-columns: 50% 50%;
+			text-align: left;
+		}
+		#services-list ul{
+			margin-top: 5rem;
+		}
+		#services-list li > i {
+			font-size: 2.5rem;
+			padding: 1.5rem;
+		}
+		#services-list li > i i{
+			font-size: 1.5rem;
+			top: calc(50% - 0.9rem);
+			right: -0.9rem;
+		}
+		#services-list h2, #services-list p{
+			margin-top: 10px;
+		}
+		#services-list li{
+			margin: 20px 0;
+			display: flex;
+			align-items: center;
+		}
+		#services-list li article{
+			margin-left: 10px;
+		}
+
+		/*============================ PORTFOLIO ==================================*/
+		/*=============================== NAV ========================================*/
+
+
+		#portfolio li:first-child{
+			display: inline;
+		}
+		#portfolio li:first-child a{
+			border-radius: 5px 0 0 5px;
+		}
+		#portfolio li:nth-child(2) a{
+			border-radius: 0;
+		}
+
+		/*=============================== GALLERY ========================================*/
+
+		#gallery{
+			grid-template-columns: 22% 22% 22% 22%;
+		}
+		#gallery .on-hover{
+			height: 45%;
+			padding-top: 5%;
+			font-size: 1.2rem;
+		}
+		/*=========================== CONTACT =================================================*/
+		/*=========================== CONTACT-FORM =================================================*/
+		
+		#contact-form{
+			position: absolute;
+			top: 10%;
+			right: 5%;
+			background-color: rgba(255,255,255,0.7);
+			width: 300px;
+		}
+		#contact-form fieldset{
+			border: 0;
+			margin-top: 5px;
+			text-align: left;
+		}
+		#contact-form input, #contact-form textarea{
+			margin-top: 10px;
+			width: 100%;
+			padding: 5px 1rem;
+		}
+		#contact-form input[type="submit"]{
+			margin-top: 10px;
+			background-color: #5CADD3;
+			padding: 1rem;
+			cursor: pointer;
+			box-shadow: 0 -3px 0 rgba(0,0,0,0.3) inset;
+			width: auto;
+		}
+		#contact-form h4{
+			margin-top: 10px;
+			color: #555;
+		}
+		#contact-form p{
+			margin-top: 5px;
+		}
+		#contact-form #tel{
+			text-decoration: underline dotted;
+		}
+	}
+
+
+}
+
+@media all and (min-width: 1300px){
+	body{
+		width: 1300px;
+		margin: auto;
+	}
+	#accueil nav{
+		width: 1300px;
+		margin: auto;
+	}
+}
