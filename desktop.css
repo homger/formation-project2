@@ -9,7 +9,7 @@
 			width: 50%;
 		}
 		header > h2{
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 		.separator{
 			margin-top: 0;
@@ -61,7 +61,7 @@
 			padding-right: 4rem;
 		}
 		#txt{
-			font-size: 1em;
+			font-size: 1.5vw;
 			top: 20%;
 			left: 10%;
 			width: 50%;
@@ -198,5 +198,11 @@
 	#accueil nav{
 		width: 1300px;
 		margin: auto;
+	}
+	#txt{
+		font-size: 1.3em;
+		top: 20%;
+		left: 10%;
+		width: 50%;
 	}
 }
