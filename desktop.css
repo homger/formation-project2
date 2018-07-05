@@ -141,7 +141,7 @@
 		#gallery .on-hover{
 			height: 45%;
 			padding-top: 5%;
-			font-size: 1.2rem;
+			font-size: 1.4vw;
 		}
 		#gallery .on-hover i{
 			top: -1.77rem;
@@ -204,5 +204,8 @@
 		top: 20%;
 		left: 10%;
 		width: 50%;
+	}
+	#gallery .on-hover{
+		font-size: 1.5rem;
 	}
 }
