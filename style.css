@@ -429,7 +429,7 @@ header  .fa-circle{
 #contact-form #tel{
 	text-decoration: underline dotted;
 }
-
+/*
 @media all and (max-device-height: 480px), ( max-height: 800px ){
 	@media all and (orientation: landscape){
 	
@@ -445,4 +445,4 @@ header  .fa-circle{
 			font-size: 2vw;
 		}
 	}
-}
+}*/
