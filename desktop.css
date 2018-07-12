@@ -1,11 +1,10 @@
 
-@media all and (min-device-width: 481px) and (min-device-height: 481px),
- ( min-width: 801px ) and ( min-height: 801px ){
+@media all and (min-width: 769px){
  	@media not all and (orientation: portrait){
 		body{
 			font-size: 1.5rem;
 		}
-		section > header{
+		.block-page > header{
 			width: 50%;
 		}
 		header > h2{
@@ -18,28 +17,44 @@
 		/*====================== ACCEUIL ===================================*/
 		/*========================= NAV ======================================*/
 		#accueil nav{
-			box-shadow: none;
-			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-end;
-			
+			position: fixed;
+			top:0;
+			left: 0;
+			right: 0;
+			height: auto;
+			width: 100%;
+			transform: translateX(0);
 		}
 		#logo{
 			margin-left: 11%;
 			flex: none;
-			
+			display: initial;
 		}
 		#menu{
 			margin-right: 11%;
 			flex: none;
 			align-self: flex-start;
-
+			flex-direction: row;
+		}
+		#menu li{
+			width: auto;
 		}
 		#menu a{
+			border-top: 3px solid transparent;
 			padding: 0 1rem;
 			padding-top: 40px;
 			padding-bottom: 20px;
 			font-size: 1.5rem;
+		}
+		#menu a:hover{
+			border-top-color: #5CADD3;
+			background-color: initial;
+			color: black;
+		}
+		.fa-arrow-up{
+			display: none;
 		}
 		/*========================= BANNER =========================================*/
 		#banner{
@@ -71,6 +86,7 @@
 		}
 		#txt p{
 			margin-top: 30px;
+			font-size: initial;
 		}
 		#info{
 			margin-top: 20px;
@@ -79,6 +95,7 @@
 			box-shadow: 0 -3px 0 rgba(0,0,0,0.3) inset;
 			border-radius: 2px;
 			color: white;
+			display: table;
 		}
 
 		/*======================= SERVICES ===================================*/
@@ -109,12 +126,13 @@
 			margin-top: 10px;
 		}
 		#services-list li{
+			padding-left: 0;
 			margin: 20px 0;
 			display: flex;
 			align-items: center;
 		}
 		#services-list li article{
-			margin-left: 10px;
+			margin-left: 15px;
 		}
 
 		/*============================ PORTFOLIO ==================================*/
@@ -141,7 +159,7 @@
 		#gallery .on-hover{
 			height: 45%;
 			padding-top: 5%;
-			font-size: 1.4vw;
+			font-size: 1.2vw;
 		}
 		#gallery .on-hover i{
 			top: -1.77rem;
@@ -149,7 +167,12 @@
 		}
 		/*=========================== CONTACT =================================================*/
 		/*=========================== CONTACT-FORM =================================================*/
-		
+		#contact{
+			margin-top: 50px;
+		}
+		#map-google{
+			height: 700px;
+		}
 		#contact-form{
 			position: absolute;
 			top: 10%;
@@ -158,14 +181,13 @@
 			width: 300px;
 		}
 		#contact-form fieldset{
-			border: 0;
 			margin-top: 5px;
 			text-align: left;
 		}
 		#contact-form input, #contact-form textarea{
 			margin-top: 10px;
 			width: 100%;
-			padding: 5px 1rem;
+			font-size: 1em;
 		}
 		#contact-form input[type="submit"]{
 			margin-top: 10px;
@@ -191,19 +213,15 @@
 }
 
 @media all and (min-width: 1300px){
-	body{
-		width: 1300px;
-		margin: auto;
-	}
-	#accueil nav{
-		width: 1300px;
-		margin: auto;
-	}
 	#txt{
 		font-size: 1.3em;
 		top: 20%;
 		left: 10%;
 		width: 50%;
+	}
+	.block-page{
+		max-width: 1300px;
+		margin: auto;
 	}
 	#gallery .on-hover{
 		font-size: 1.5rem;
