@@ -1,6 +1,6 @@
 
 @media all and (min-width: 769px){
- 	@media not all and (orientation: portrait){
+ 	/*@media not all and (orientation: portrait){*/
 		body{
 			font-size: 1.5rem;
 		}
@@ -19,19 +19,19 @@
 		#accueil nav{
 			justify-content: space-between;
 			align-items: flex-end;
-			position: fixed;
-			top:0;
-			left: 0;
-			right: 0;
 			height: auto;
 			width: 100%;
-			transform: translateX(0);
+			margin-left: 0;
+			flex-direction: row;
 		}
 		#logo{
+			position: relative;
 			margin-left: 11%;
 			flex: none;
 			display: initial;
+			height: auto;
 		}
+		#menu-switch, #menu-button{ display: none;}
 		#menu{
 			margin-right: 11%;
 			flex: none;
@@ -47,6 +47,7 @@
 			padding-top: 40px;
 			padding-bottom: 20px;
 			font-size: 1.5rem;
+			background-color: transparent;
 		}
 		#menu a:hover{
 			border-top-color: #5CADD3;
@@ -180,7 +181,7 @@
 			background-color: rgba(255,255,255,0.7);
 			width: 300px;
 		}
-		#contact-form fieldset{
+		#contact-form fieldset, #contact-form header{
 			margin-top: 5px;
 			text-align: left;
 		}
@@ -207,7 +208,7 @@
 		#contact-form #tel{
 			text-decoration: underline dotted;
 		}
-	}
+	/*}*/
 
 
 }

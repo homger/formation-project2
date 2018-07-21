@@ -98,6 +98,7 @@ header  .fa-circle{
 	position: fixed;
 	top:0;
 	left:0;
+	right: 0;
 	height: 100%;
 	z-index: 2;
 	background-color: white;
@@ -108,13 +109,16 @@ header  .fa-circle{
 	flex-direction: column;
 }
 #logo{
-	display: none;
 	z-index: -1;
 	width: auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 40px;
 }
 #logo img{
-	max-width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 #menu{
 	display: flex;
@@ -160,28 +164,27 @@ header  .fa-circle{
 	color: #5CADD3;
 	box-shadow: 0 2px 5px black;
 }
-
+/*=============================== BUTTON ========================================*/
 #menu-switch{
 	position: fixed;
-	top: 5px;
-	left: 5px;
-	width: 50px;
-	height: 50px;
+	top: 0px;
+	right: 5px;
+	width: 40px;
+	height: 40px;
 	z-index: 3;
 	opacity: 0;
 }
-
 #menu-button{
 	position: fixed;
-	top: 5px;
-	left: 5px;
-	width: 50px;
-	height: 50px;
+	top: 0px;
+	right: 5px;
+	width: 40px;
+	height: 40px;
 	z-index: 2;
 	border-radius: 50%;
-	transition-property: top left bottom;
-	transition-duration: 1s;
-	transition-timing-function: cubic-bezier(0.1,0.1,0.1,1);
+	transition-property: top right bottom;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
 }
 #menu-button::before{
 	position: fixed;
@@ -190,9 +193,9 @@ header  .fa-circle{
 	content:"";
 	display: block;
 	width: 100vw;
-	height: 50px;
+	height: 42px;
 	background-color: white;
-	box-shadow: 0 1px 2px black;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
 }
 #menu-button div{
 	position: relative;
@@ -200,9 +203,9 @@ header  .fa-circle{
 	border: 0 solid #5CADD3;
 	text-align: center;
 	top: 0;
-	left: 0;
-	transition-property: top left;
-	transition-duration: 1s;
+	right: 0;
+	transition-property: top right;
+	transition-duration: 0.2s;
 	height: 50px;
 }
 #menu-button span{
@@ -211,7 +214,7 @@ header  .fa-circle{
 	height: 10%;
 	background-color: #5CADD3;
 	transition-property: transform opacity;
-	transition: 1s linear;
+	transition: 0.2s linear;
 	transform-origin: 50% 50%;
 }
 #menu-switch:checked ~ nav{
@@ -219,13 +222,13 @@ header  .fa-circle{
 }
 #menu-switch:checked{
 	top: 0;
-	left: 70%;
+	right: 0;
 	width: 30%;
 	height: 100%;
 }
 #menu-switch:checked ~ #menu-button{
 	top: 0;
-	left: 70%;
+	right: 0;
 	width: 30%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.4);
@@ -240,7 +243,7 @@ header  .fa-circle{
 	background-color: white;
 	width: 5.2rem;
 	top: 45%;
-	left: 30%;
+	right: calc( 50% - 25px);
 	animation: b-rotate 5s 	linear infinite;
 }
 #menu-switch:checked ~ #menu-button span:nth-child(2){
@@ -266,7 +269,7 @@ header  .fa-circle{
 /*========================= BANNER =========================================*/
 #banner{
 	position: relative;
-	top: 10px;
+	top: 50px;
 	overflow: hidden;
 	text-shadow: 1px 1px 2px black;
 	height: auto;
@@ -344,7 +347,6 @@ header  .fa-circle{
 }
 /*========================= BANNER ANIMATION =========================================*/
 @keyframes slider-swap{
-	
 	41%{transform: translateX(0%);}
 	50%{transform: translateX(-100%);}
 	91%{transform: translateX(-100%);}
@@ -537,9 +539,9 @@ header  .fa-circle{
 	width: 100%;
 }
 #form-text{
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
-#contact-form fieldset{
+#contact-form fieldset, #contact-form header{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -551,6 +553,7 @@ header  .fa-circle{
 	resize: none;
 	padding: 5px 1rem;
 	font-size: 2em;
+	font-family: Roboto;
 }
 #contact-form input[type="submit"]{
 	margin-top: 10px;
