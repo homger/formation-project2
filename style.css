@@ -182,7 +182,7 @@ header  .fa-circle{
 	height: 40px;
 	z-index: 2;
 	border-radius: 50%;
-	transition-property: top right bottom;
+	/*transition-property: top right bottom;*/
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
 }
@@ -204,7 +204,7 @@ header  .fa-circle{
 	text-align: center;
 	top: 0;
 	right: 0;
-	transition-property: top right;
+	/*transition-property: top right;*/
 	transition-duration: 0.2s;
 	height: 50px;
 }
@@ -213,7 +213,7 @@ header  .fa-circle{
 	width: 100%;
 	height: 10%;
 	background-color: #5CADD3;
-	transition-property: transform opacity;
+	/*transition-property: transform opacity;*/
 	transition: 0.2s linear;
 	transform-origin: 50% 50%;
 }
@@ -518,6 +518,7 @@ header  .fa-circle{
 #map-google{
 	width: 100%;
 	height: 300px;
+	border: 0;
 }
 #map:hover #filter{
 	display: none;

@@ -177,7 +177,7 @@
 	</section>
 	<section id="contact">
 		<div id="map">
-			<iframe id="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424608041!2d2.347636915769127!3d48.87305530762783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1531128409759"frameborder="0" allowfullscreen></iframe>
+			<iframe id="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424608041!2d2.347636915769127!3d48.87305530762783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1531128409759" allowfullscreen></iframe>
 			<div id="filter"></div> 
 		</div>
 		<form id="contact-form" action="#contact-form" method="POST">
